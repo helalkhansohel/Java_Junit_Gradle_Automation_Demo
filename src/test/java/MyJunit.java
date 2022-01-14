@@ -2,9 +2,12 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
@@ -27,6 +30,17 @@ public class MyJunit {
         System.out.println(title);
         Assert.assertTrue(title.contains("ToolsQA"));
     }
+    @Test
+    public void checkifElementExists() throws InterruptedException {
+        driver.get("https://demoqa.com");
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        Boolean status=wait.until(ExpectedConditions.elementToBeClickable(By.xpath
+                ("//img[@src='/images/Toolsqa.jpg']"))).isDisplayed();
+        Assert.assertEquals(status,true);
+
+    }
+
+
     @After
     public void finishTest(){
         driver.close();

@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">58.346s</div>
+<div class="counter">49.139s</div>
 <p>duration</p>
 </div>
 </td>
@@ -64,10 +64,7 @@
 <a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
-</li>
-<li>
-<a href="#tab2">Standard error</a>
+<a href="#tab1">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
@@ -81,41 +78,37 @@
 </tr>
 </thead>
 <tr>
-<td class="success">getTitle</td>
-<td class="success">58.346s</td>
+<td class="success">checkifElementExists</td>
+<td class="success">49.139s</td>
 <td class="success">passed</td>
 </tr>
 </table>
 </div>
 <div id="tab1" class="tab">
-<h2>Standard output</h2>
-<span class="code">
-<pre>ToolsQA
-</pre>
-</span>
-</div>
-<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
 <pre>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-1642153258508	geckodriver	INFO	Listening on 127.0.0.1:50003
-1642153259784	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--headed&quot; &quot;--remote-debugging-port&quot; &quot;56558&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\HELALK~1\\AppData\\Local\\Temp\\rust_mozprofileprp3DK&quot;
-1642153261580	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\Helal Khan\\AppData\\Local\\Temp\\rust_mozprofileprp3DK\\search.json.mozlz4&quot;, (void 0)))
-DevTools listening on ws://localhost:56558/devtools/browser/04f15c9e-82b4-4638-840c-a895f4d9fb23
-console.error: Region.jsm: &quot;Error fetching region&quot; (new Error(&quot;TIMEOUT&quot;, &quot;resource://gre/modules/Region.jsm&quot;, 772))
-console.error: Region.jsm: &quot;Failed to fetch region&quot; (new Error(&quot;TIMEOUT&quot;, &quot;resource://gre/modules/Region.jsm&quot;, 419))
-1642153274789	Marionette	INFO	Listening on port 10415
-1642153276819	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-Jan 14, 2022 3:41:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+1642156459109	geckodriver	INFO	Listening on 127.0.0.1:57309
+1642156459811	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--headed&quot; &quot;--remote-debugging-port&quot; &quot;63918&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\HELALK~1\\AppData\\Local\\Temp\\rust_mozprofileejjUoD&quot;
+1642156464714	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\Helal Khan\\AppData\\Local\\Temp\\rust_mozprofileejjUoD\\search.json.mozlz4&quot;, (void 0)))
+DevTools listening on ws://localhost:63918/devtools/browser/9e56bc9c-a522-47e8-9a17-f9093d77955e
+1642156484045	Marionette	INFO	Listening on port 10719
+1642156484761	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Jan 14, 2022 4:34:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Jan 14, 2022 3:41:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+JavaScript warning: https://pagead2.googlesyndication.com/bg/u1NYxsmA8ZVAu2sVzPZBh4qj2FMOPiJd8uWeqwBcPdE.js line 1 &gt; eval line 5720 &gt; eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/u1NYxsmA8ZVAu2sVzPZBh4qj2FMOPiJd8uWeqwBcPdE.js line 1 &gt; eval line 5366 &gt; eval line 1 &gt; eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Jan 14, 2022 4:35:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 85
-1642153307419	Marionette	INFO	Stopped listening on port 10415
+1642156503144	Marionette	INFO	Stopped listening on port 10719
+[Parent 10084, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Parent 10084, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
 
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 </pre>
 </span>
@@ -128,7 +121,7 @@ INFO: Found exact CDP implementation for version 85
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.2</a> at Jan 14, 2022, 3:41:55 PM</p>
+<a href="http://www.gradle.org">Gradle 7.2</a> at Jan 14, 2022, 4:35:06 PM</p>
 </div>
 </div>
 </body>
