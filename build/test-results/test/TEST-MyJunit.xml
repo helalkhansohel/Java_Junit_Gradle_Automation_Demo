@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MyJunit" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-14T09:40:55" hostname="DESKTOP-39CJFFC" time="58.346">
+  <properties/>
+  <testcase name="getTitle" classname="MyJunit" time="58.346"/>
+  <system-out><![CDATA[ToolsQA
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+1642153258508	geckodriver	INFO	Listening on 127.0.0.1:50003
+1642153259784	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headed" "--remote-debugging-port" "56558" "-no-remote" "-profile" "C:\\Users\\HELALK~1\\AppData\\Local\\Temp\\rust_mozprofileprp3DK"
+1642153261580	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Helal Khan\\AppData\\Local\\Temp\\rust_mozprofileprp3DK\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56558/devtools/browser/04f15c9e-82b4-4638-840c-a895f4d9fb23
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1642153274789	Marionette	INFO	Listening on port 10415
+1642153276819	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Jan 14, 2022 3:41:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jan 14, 2022 3:41:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 85
+1642153307419	Marionette	INFO	Stopped listening on port 10415
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+]]></system-err>
+</testsuite>
