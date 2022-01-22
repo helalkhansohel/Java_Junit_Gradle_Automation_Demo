@@ -19,4 +19,13 @@ dependencies {
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '4.1.1'
 
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
+
+    // https://mvnrepository.com/artifact/org.apache.poi/poi
+    implementation group: 'org.apache.poi', name: 'poi', version: '5.0.0'
+
+
+
+
 }

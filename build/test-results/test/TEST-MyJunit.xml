@@ -1,30 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MyJunit" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-14T10:34:16" hostname="DESKTOP-39CJFFC" time="49.139">
+<testsuite name="MyJunit" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-01-22T04:52:46" hostname="DESKTOP-39CJFFC" time="35.414">
   <properties/>
-  <testcase name="checkifElementExists" classname="MyJunit" time="49.139"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="readExcelFile" classname="MyJunit" time="35.414">
+    <failure message="org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'DESKTOP-39CJFFC', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [6b3a6d82-9396-47bb-b410-cbdc1acd7bf9, quit {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 96.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220106144528, moz:debuggerAddress: localhost:57617, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 6140, moz:profile: C:\Users\Helal Khan\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:57617/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 6b3a6d82-9396-47bb-b410-cbdc1acd7bf9" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-39CJFFC', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6b3a6d82-9396-47bb-b410-cbdc1acd7bf9, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 96.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220106144528, moz:debuggerAddress: localhost:57617, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 6140, moz:profile: C:\Users\Helal Khan\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:57617/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6b3a6d82-9396-47bb-b410-cbdc1acd7bf9
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:132)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:439)
+	at app//MyJunit.finishTest(MyJunit.java:358)
+	at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.1/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at app//org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at app//org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at app//org.junit.internal.runners.statements.RunAfters.invokeMethod(RunAfters.java:46)
+	at app//org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at app//org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at app//org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at app//org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at app//org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.1/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-39CJFFC', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	... 49 more
+Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-39CJFFC', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: unknown
+	at app//org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:174)
+	at app//org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:127)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:122)
+	at java.base@17.0.1/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+</failure>
+  </testcase>
+  <system-out><![CDATA[ID|| Name|| address|| 
+1|| Helal|| Mirpur|| 
+2|| Sohel|| Uttara|| 
+3|| Karim|| Dhaka|| 
+]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-1642156459109	geckodriver	INFO	Listening on 127.0.0.1:57309
-1642156459811	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headed" "--remote-debugging-port" "63918" "-no-remote" "-profile" "C:\\Users\\HELALK~1\\AppData\\Local\\Temp\\rust_mozprofileejjUoD"
-1642156464714	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Helal Khan\\AppData\\Local\\Temp\\rust_mozprofileejjUoD\\search.json.mozlz4", (void 0)))
-DevTools listening on ws://localhost:63918/devtools/browser/9e56bc9c-a522-47e8-9a17-f9093d77955e
-1642156484045	Marionette	INFO	Listening on port 10719
-1642156484761	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-Jan 14, 2022 4:34:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+1642827167916	geckodriver	INFO	Listening on 127.0.0.1:56952
+1642827168582	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headed" "--remote-debugging-port" "57617" "-no-remote" "-profile" "C:\\Users\\HELALK~1\\AppData\\Local\\Temp\\rust_mozprofilepgT8ly"
+1642827169251	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Helal Khan\\AppData\\Local\\Temp\\rust_mozprofilepgT8ly\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57617/devtools/browser/04eba11e-b2bc-4ea9-b87c-dbef9326903b
+1642827173237	Marionette	INFO	Listening on port 6953
+1642827173414	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Jan 22, 2022 10:52:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-JavaScript warning: https://pagead2.googlesyndication.com/bg/u1NYxsmA8ZVAu2sVzPZBh4qj2FMOPiJd8uWeqwBcPdE.js line 1 > eval line 5720 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-JavaScript warning: https://pagead2.googlesyndication.com/bg/u1NYxsmA8ZVAu2sVzPZBh4qj2FMOPiJd8uWeqwBcPdE.js line 1 > eval line 5366 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-Jan 14, 2022 4:35:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFO: Found exact CDP implementation for version 85
-1642156503144	Marionette	INFO	Stopped listening on port 10719
-[Parent 10084, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-[Parent 10084, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1642827176944	Marionette	INFO	Stopped listening on port 6953
+console.error: "Could not load engine amazondotcom@search.mozilla.org: Error: Data is not ready."
+console.error: "Could not load engine wikipedia@search.mozilla.org: TypeError: AddonManagerInternal._getProviderByName(...) is undefined"
+console.error: "Could not load engine bing@search.mozilla.org: TypeError: AddonManagerInternal._getProviderByName(...) is undefined"
+console.error: "Could not load engine ddg@search.mozilla.org: TypeError: AddonManagerInternal._getProviderByName(...) is undefined"
+console.warn: SearchService: "_init: abandoning init due to shutting down"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "DoHController: clear state and remove observers"
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+Jan 22, 2022 10:53:22 AM org.openqa.selenium.concurrent.ExecutorServices shutdownGracefully
+WARNING: Failed to shutdown Driver Command Executor
 ]]></system-err>
 </testsuite>
